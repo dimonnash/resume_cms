@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/* line 1, ../sass/_grids.scss */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 92, ../sass/_grids.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 105, ../sass/_grids.scss */
+body {
+  line-height: 1;
+}
+
+/* line 108, ../sass/_grids.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 112, ../sass/_grids.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 116, ../sass/_grids.scss */
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+/* line 123, ../sass/_grids.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 129, ../sass/_grids.scss */
+.container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4c4e50;
+}
+/* line 12, C:/Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 133, ../sass/_grids.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+/* line 137, ../sass/_grids.scss */
+.left {
+  color: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  padding-left: 15px;
+}
+
+/* line 142, ../sass/_grids.scss */
+.right {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  background-color: #353638;
+  color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 149, ../sass/_grids.scss */
+header {
+  height: 217px;
+  background-image: url(../img/header_bg.png);
+  width: 100%;
+}
+
+/* line 154, ../sass/_grids.scss */
+.panel {
+  padding: 20px;
+  width: 830px;
+  background: #7fb2dd;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* line 164, ../sass/_grids.scss */
+.left-m {
+  margin-left: 50px;
+}
+
+/* line 167, ../sass/_grids.scss */
+.label_name {
+  width: 94px;
+  display: inline-block;
+}
+
+/* line 171, ../sass/_grids.scss */
+.wrapper_name {
+  float: right;
+  padding-top: 100px;
+  padding-right: 100px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+/* line 180, ../sass/_grids.scss */
+.foto {
+  text-align: center;
+}
+
+/* line 183, ../sass/_grids.scss */
+.foto img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+/* line 189, ../sass/_grids.scss */
+.title_skils {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+/* line 193, ../sass/_grids.scss */
+.bar_skils {
+  width: 100%;
+}
+
+/* line 196, ../sass/_grids.scss */
+.name {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 199, ../sass/_grids.scss */
+.prof {
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 202, ../sass/_grids.scss */
+.content_block1 {
+  margin-top: 40px;
+}
+
+/* line 205, ../sass/_grids.scss */
+.content_block4 {
+  padding-bottom: 20px;
+}
+
+/* line 208, ../sass/_grids.scss */
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+/* line 215, ../sass/_grids.scss */
+button,
+input {
+  border: 5px solid white;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px 0 0 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* line 228, ../sass/_grids.scss */
+label {
+  width: 130px;
+  display: inline-block;
+}
+
+/* line 232, ../sass/_grids.scss */
+button:hover {
+  background-color: #7fb2dd;
+  cursor: pointer;
+}
+
+/* line 236, ../sass/_grids.scss */
+progress {
+  background-color: #78c3e8;
+}
+
+/* line 239, ../sass/_grids.scss */
+progress::-webkit-progress-bar {
+  /* ╤Б╤В╨╕╨╗╨╡╨▓╤Л╨╡ ╨┐╤А╨░╨▓╨╕╨╗╨░ */
+}
+
+/* line 242, ../sass/_grids.scss */
+progress::-webkit-progress-value {
+  background-color: #78c3e8;
+}
+
+/* line 245, ../sass/_grids.scss */
+progress::-moz-progress-bar {
+  background-color: #78c3e8;
+}
+
+/* line 248, ../sass/_grids.scss */
+li {
+  padding-bottom: 15px;
+}
+
+/* line 251, ../sass/_grids.scss */
+h3 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+/* line 259, ../sass/_grids.scss */
+.pos {
+  position: absolute;
+  margin-left: 160px;
+}
+
+/* line 263, ../sass/_grids.scss */
+.fb,
+.tw,
+.vk,
+.email,
+.phone,
+.address {
+  padding-bottom: 10px;
+}
+
+/* line 271, ../sass/_grids.scss */
+.home:before {
+  content: url(../img/house-32.png);
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* line 278, ../sass/_grids.scss */
+.ph:before {
+  content: url(../img/phone-46-32.png);
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* line 285, ../sass/_grids.scss */
+.em:before {
+  content: url(../img/email-3-32.png);
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* line 292, ../sass/_grids.scss */
+.vkon:before {
+  content: url(../img/vk-32.png);
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* line 299, ../sass/_grids.scss */
+.twiter:before {
+  content: url(../img/twitter-3-32.png);
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* line 306, ../sass/_grids.scss */
+.face:before {
+  content: url(../img/facebook-3-32.png);
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* line 313, ../sass/_grids.scss */
+textarea {
+  resize: none;
+  width: 96%;
+  height: 150px;
+  border: 5px solid white;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 18px;
+}

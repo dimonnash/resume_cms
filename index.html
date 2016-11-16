@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Resume Main</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel">
+            <a class="handle" href="#">Смотреть</a>
+            <!-- Ссылка для пользователей с отключенным JavaScript -->
+            <h3><span >Панель Администратора</span></h3>
+            <form>
+                <label for="name">Имя:</label>
+                <input id="name" type="text" v-model="input.name">
+
+                <label class="left-m" for="prof">Проффесия:</label>
+                <input id="prof" type="text" v-model="input.proff">
+                <h3>Контакты</h3>
+
+                <label for="ho">Аддрес:</label>
+                <input id="ho" type="text" v-model="contackt.home">
+
+                <label  class="left-m" for="ph">Телефон:</label>
+                <input id="ph" type="tel" v-model="contackt.phone">
+                <label for="em">Почта:</label>
+                <input id="em" type="email" v-model="contackt.email">
+
+                <label class="left-m" for="vk">ВКонтакте:</label>
+                <input id="vk" type="text" v-model="contackt.vk">
+                <label for="tw">Твиттер:</label>
+                <input id="tw" type="text" v-model="contackt.tw">
+
+                <label class="left-m" for="fb">Фейсбук:</label>
+                <input id="fb" type="text" v-model="contackt.fb">
+
+
+                <h3>Профессиональные умения</h3>
+                <label for="skils">Умение:</label>
+                <input id="skils" type="text" v-model="newSkills">
+
+                <label  class="left-m" for="bar">Значение в %:</label>
+                <input id="bar" type="text" v-model="newBar">
+                <br>
+                <button v-on:click="addSkills">Добавить</button>
+
+                <h3>Персональные умения</h3>
+                <label for="skils">Умение:</label>
+                <input id="skils" type="text" v-model="newPS">
+
+                <label  class="left-m" for="bar">Значение в %:</label>
+                <input id="bar" type="text" v-model="newPB">
+                <br>
+                <button v-on:click="addPskills">Добавить</button>
+
+                <h3>Блоки Образование, о себе, достижения</h3>
+
+                <label  class="left-m" for="bar">Название:</label>
+                <input id="bar" type="text" v-model="newnameblock">
+                <br>
+                <label  class="left-m" for="bar">Содержимое:</label>
+                <textarea v-model="newcontentblock" ></textarea>
+                <br>
+                <button v-on:click="addcontent">Добавить</button>
+            </form>
+
+
+            <br>
+
+
+        </div>
+        <header>
+            <div class="wrapper_name">
+                <div class="name">{{input.name}}</div>
+                <div class="prof">{{input.proff}}</div>
+            </div>
+        </header>
+        <div class="left">
+            <div class="content_block" v-for="item in block">
+                <h2>{{item.nameblock}}</h2>
+                <p>{{item.contentblock}}</p>
+
+            </div>
+            <br>
+            <br>
+
+
+        </div>
+        <div class="right">
+            <div class="foto">
+                <img src="img/foto.png">
+            </div>
+            <div class="contact">
+                <h3>Контакты</h3>
+                <div class="address">
+                    <p class="home">{{contackt.home}}</p>
+                </div>
+                <div class="phone">
+                    <p class="ph">{{contackt.phone}}</p>
+                </div>
+                <div class="email">
+                    <p class="em">{{contackt.email}}</p>
+                </div>
+                <div class="vk">
+                    <p class="vkon">{{contackt.vk}}</p>
+                </div>
+                <div class="tw">
+                    <p class="twiter">{{contackt.tw}}</p>
+                </div>
+                <div class="fb">
+                    <p class="face">{{contackt.fb}}</p>
+                </div>
+
+            </div>
+            <div class="skills">
+                <h3>Профессиональные умения</h3>
+                <ul>
+                    <li v-for="item in items">
+                        <p class="title_skils">{{item.message}}</p>
+                        <span class="pos">{{item.bar}}%</span>
+                        <progress class="bar_skils" :value="item.bar" max="100"></progress>
+                    </li>
+                </ul>
+                <h3>Персональные умения</h3>
+                <ul>
+                    <li v-for="item in prskils">
+                        <p class="title_skils">{{item.naz}}</p>
+                        <span class="pos">{{item.pbar}}%</span>
+                        <progress class="bar_skils" :value="item.pbar" max="100"></progress>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="wrapper_table">
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="js/adminpanel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.js"></script>
+    <script src="js/component.js"></script>
+</body>
+
+</html>
