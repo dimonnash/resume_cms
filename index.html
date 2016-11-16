@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic-ext" rel="stylesheet">
-    <title>Resume Main</title>
+    <title>Resume CMS</title>
 </head>
 
 <body>
@@ -81,9 +82,16 @@
             </div>
         </header>
         <div class="left">
-            <div class="content_block" v-for="item in block">
+            <div class="content_block" v-for="(item, index) in block">
                 <h2>{{item.nameblock}}</h2>
-                <p>{{item.contentblock}}</p>
+
+                <div v-on:click="removeblock(index)" class="close">
+                    <img src="img/close.png">
+                </div>
+                <div class="wrapper_content">
+                    <p class="norm">{{item.contentblock}}</p>
+                </div>
+
 
             </div>
             <br>

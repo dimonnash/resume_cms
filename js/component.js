@@ -62,6 +62,9 @@ var component = new Vue({
             this.newnameblock = '';
             this.newcontentblock = '';
 
+        },
+        removeblock: function(index){
+            this.block.splice(index);
         }
     }
 });
